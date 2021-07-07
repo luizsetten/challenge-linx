@@ -32,12 +32,10 @@ h1 {
   width: 0;
   height: 12vw;
   border-style: solid;
-  rotate: 180deg;
-  transform: rotateY(180deg);
   bottom: 0;
   position: fixed;
   z-index: -1;
-  border-width: 0 100vw 8vw 0;
+  border-width: 8vw 100vw 0 0;
   border-color: transparent #707070 transparent transparent;
 }
 
@@ -77,4 +75,5 @@ button {
 .footer {
   position: absolute;
   bottom: 0;
+  color: #fff;
 }
