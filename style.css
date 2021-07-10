@@ -1,6 +1,7 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
+  background-color: #aaa;
 }
 
 .title-1 {
@@ -18,7 +19,7 @@ h1 {
   font-weight: normal;
 }
 
-.superior-background {
+/* .superior-background {
   width: 0;
   height: 14rem;
   border-style: solid;
@@ -26,9 +27,9 @@ h1 {
   z-index: -1;
   border-width: 0 100vw 9vh 0;
   border-color: transparent #707070 transparent transparent;
-}
+} */
 
-.inferior-background {
+/* .inferior-background {
   width: 0;
   height: 12vw;
   border-style: solid;
@@ -37,7 +38,7 @@ h1 {
   z-index: -1;
   border-width: 8vw 100vw 0 0;
   border-color: transparent #707070 transparent transparent;
-}
+} */
 
 .header {
   /* top: 0;
@@ -75,16 +76,20 @@ button {
 
 .content {
   margin: 0 20rem 0 20rem;
+  justify-content: space-evenly;
   display: flex;
 }
 
-.content-title {
-  flex: 2;
+.title-content {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
 .form {
-  flex: 1;
-  margin-bottom: 300px;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
 }
 
 .footer {
