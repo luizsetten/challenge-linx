@@ -106,6 +106,40 @@ button {
   width: 40%;
 }
 
+#name,
+#email,
+#cpf,
+#friend-name,
+#friend-email {
+  width: 340px;
+  height: 30px;
+  border: 1px solid #707070;
+  margin-bottom: 20px;
+  padding: 0;
+}
+
+#male,
+#female {
+  width: 14px;
+  height: 14px;
+  border: 1px solid #707070;
+}
+
+#female {
+  margin-left: 2rem;
+}
+
+label {
+  font-size: 12px;
+  color: #888888;
+  margin-bottom: 7px;
+}
+
+#subscribe-me {
+  margin: 1rem 0 0 0;
+  width: 340px;
+}
+
 .section {
   display: flex;
   align-items: center;
