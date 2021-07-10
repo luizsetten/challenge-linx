@@ -93,8 +93,8 @@ button {
 }
 
 .footer {
-  position: absolute;
+  /* position: absolute;
   margin: auto;
-  bottom: 0;
+  bottom: 0; */
   color: #fff;
 }
