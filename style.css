@@ -40,14 +40,15 @@ h1 {
 }
 
 .header {
-  top: 0;
+  /* top: 0;
   left: 5%;
-  right: 5%;
-  position: absolute;
+  right: 5%; */
+  /* position: absolute; */
   display: flex;
   flex-direction: column;
   align-items: center;
   color: #fff;
+  margin-bottom: 1rem;
 }
 
 .header-buttons {
@@ -72,8 +73,23 @@ button {
   margin: 0.5rem;
 }
 
+.content {
+  margin: 0 20rem 0 20rem;
+  display: flex;
+}
+
+.content-title {
+  flex: 2;
+}
+
+.form {
+  flex: 1;
+  margin-bottom: 300px;
+}
+
 .footer {
   position: absolute;
+  margin: auto;
   bottom: 0;
   color: #fff;
 }
