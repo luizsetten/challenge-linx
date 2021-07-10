@@ -58,6 +58,10 @@ h1 {
   justify-content: center;
 }
 
+.header-buttons button {
+  width: 160px;
+}
+
 button {
   text-align: center;
   font: normal normal normal 14px/16px "Roboto", sans-serif;
@@ -69,7 +73,6 @@ button {
   border: 1px solid #707070;
   border-radius: 4px;
   opacity: 1;
-  width: 160px;
   height: 40px;
   margin: 0.5rem;
 }
@@ -86,10 +89,40 @@ button {
   width: 40%;
 }
 
+.message-title {
+  color: #888888;
+  font-weight: normal;
+  font-size: 20px;
+}
+
+.message-content {
+  color: #888888;
+  font-size: 12px;
+}
+
 .form {
   display: flex;
   flex-direction: column;
   width: 40%;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+}
+
+.divider-line {
+  width: 46%;
+  height: 0.13rem;
+  background-color: #888888;
+}
+
+.divider-title {
+  font-weight: bold;
+  color: #888888;
+  font-size: 18px;
+  display: flex;
+  text-align: center;
 }
 
 .footer {
