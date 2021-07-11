@@ -1,17 +1,46 @@
 
 /* Event listener for newsletter form */
 document.querySelector("#newsletter-form").addEventListener("submit", event => {
-  event.preventDefault();
+  event.preventDefault()
 
-  console.log("Send email");
+  console.log("Send email")
 })
 
 
 /* Event listener for share with friend form */
 document.querySelector("#share-with-friend").addEventListener("submit", event => {
-  event.preventDefault();
+  event.preventDefault()
 
-  console.log("Share with friend");
+  console.log("Share with friend")
+})
+
+/* Event listener for button "Seus produtos" */
+document.querySelector("#go-linx-button").addEventListener("click", () => {
+  window.location.href = "https://www.linx.com.br" 
+})
+
+/* Event listener for button "Conheça a Linx" */
+document.querySelector("#go-to-products").addEventListener("click", () => {
+  const products = document.querySelector(".products")
+  products.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+/* Event listener for button "Compartilhe" */
+document.querySelector("#go-to-newsletter").addEventListener("click", () => {
+  const products = document.querySelector(".newsletter-container")
+  products.scrollIntoView({
+    behavior: "smooth"
+  })
+})
+
+/* Event listener for button "Compartilhe" */
+document.querySelector("#share-button").addEventListener("click", () => {
+  const products = document.querySelector("#share-with-friend")
+  products.scrollIntoView({
+    behavior: "smooth"
+  })
 })
 
 /* mask handler */
@@ -36,11 +65,11 @@ function mCPF(cpf){
 }
 
 /* Variable that indicates the next page to load products */
-let page;
+let page
 
 document.querySelector("#load-more").addEventListener("click", event => {
-  event.preventDefault();
-  getProducts(page);
+  event.preventDefault()
+  getProducts(page)
 })
 
 /* Fetch API */
@@ -78,8 +107,8 @@ async function getProducts(url = 'https://frontend-intern-challenge-api.iurykrie
     show(data.products)
   } catch (error) {
     console.log(error)
-    alert("Houve um erro ao carregar os produtos");
+    alert("Houve um erro ao carregar os produtos")
   }
 }
 
-getProducts(page);
+getProducts(page)
