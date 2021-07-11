@@ -93,7 +93,6 @@ button:hover {
 .title-content {
   display: flex;
   flex-direction: column;
-  width: 40%;
 }
 
 .message-title {
@@ -274,7 +273,6 @@ label {
   }
 
   .title-content {
-    width: 100%;
     padding: 0.5rem;
   }
 
