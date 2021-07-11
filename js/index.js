@@ -43,9 +43,9 @@ async function getProducts() {
 
     for(let product of products) {
       output += `
-      <div class="product-container">
+      <div class="product-container" id="product_item_${product.id}">
         <div class="product-image">
-          <img src="${product.image}" alt="Imagem de ${product.name}" srcset="">
+          <img src="${product.image}" alt="Imagem de ${product.name}">
         </div>
         <span class="product-name">${product.name}</span>
         <p class="product-description">${product.description}</p>
