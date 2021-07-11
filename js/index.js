@@ -84,13 +84,15 @@ async function getProducts(url = 'https://frontend-intern-challenge-api.iurykrie
         <div class="product-image">
           <img src="${product.image}" alt="Imagem de ${product.name}">
         </div>
-        <span class="product-name">${product.name}</span>
-        <p class="product-description">${product.description}</p>
-        <span class="price-from">De: ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.oldPrice)}</span>
-        <span class="price-to">Por: ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price)}</span>
-        <span class="price-parceled">ou ${product.installments.count}x de ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.installments.value)}</span>
+        <div class="product-info">
+          <span class="product-name">${product.name}</span>
+          <p class="product-description">${product.description}</p>
+          <span class="price-from">De: ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.oldPrice)}</span>
+          <span class="price-to">Por: ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.price)}</span>
+          <span class="price-parceled">ou ${product.installments.count}x de ${new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(product.installments.value)}</span>
 
-        <button class="buy-button">Comprar</button>
+          <button class="buy-button">Comprar</button>
+        </div>
       </div>
     `
     }
