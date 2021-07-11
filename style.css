@@ -1,7 +1,6 @@
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  background-color: #aaa;
 }
 
 .title-1 {
@@ -45,6 +44,8 @@ h1 {
   left: 5%;
   right: 5%; */
   /* position: absolute; */
+  background-color: #aaa;
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,5 +164,6 @@ label {
   /* position: absolute;
   margin: auto;
   bottom: 0; */
+  background-color: #aaa;
   color: #fff;
 }
