@@ -7,6 +7,16 @@ body {
   font-family: "Roboto", sans-serif;
 }
 
+.content {
+  display: flex;
+  flex-direction: column;
+}
+
+.newsletter-container {
+  display: flex;
+  justify-content: center;
+}
+
 .title-1 {
   margin-top: 3rem;
 }
@@ -48,7 +58,7 @@ h1 {
   left: 5%;
   right: 5%; */
   /* position: absolute; */
-  background-color: #aaa;
+  background-color: #707070;
 
   display: flex;
   flex-direction: column;
@@ -242,9 +252,10 @@ label {
 }
 
 .footer {
-  /* position: absolute;
-  margin: auto;
-  bottom: 0; */
-  background-color: #aaa;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 4rem;
+  background-color: #707070;
   color: #fff;
 }
