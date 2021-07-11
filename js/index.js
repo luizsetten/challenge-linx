@@ -35,11 +35,19 @@ function mCPF(cpf){
   return cpf
 }
 
+/* Variable that indicates the next page to load products */
+let page;
+
+document.querySelector("#load-more").addEventListener("click", event => {
+  event.preventDefault();
+  getProducts(page);
+})
+
 /* Fetch API */
-async function getProducts() {
+async function getProducts(url = 'https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1') {
   /* Show products */
   function show(products) {
-    let output = ''
+    let output = document.querySelector('.products').innerHTML
 
     for(let product of products) {
       output += `
@@ -62,10 +70,10 @@ async function getProducts() {
   }
 
   try {
-    const response = await fetch('https://frontend-intern-challenge-api.iurykrieger.now.sh/products?page=1')
+    const response = await fetch(url)
     const data = await response.json()
 
-    console.log(data)
+    page = `https://${data.nextPage}`
 
     show(data.products)
   } catch (error) {
@@ -74,4 +82,4 @@ async function getProducts() {
   }
 }
 
-getProducts();
+getProducts(page);
